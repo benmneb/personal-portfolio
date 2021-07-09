@@ -1,8 +1,8 @@
 import { SvgWrapper } from '../../utils';
 
-export function MongoDB() {
+export function MongoDB(props) {
 	return (
-		<SvgWrapper viewBox="0 0 128 128">
+		<SvgWrapper viewBox="0 0 128 128" {...props}>
 			<path
 				fill="#ffffff"
 				fillRule="evenodd"
