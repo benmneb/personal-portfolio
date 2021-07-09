@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
-const ScrollSnapper = styled.div`
+const StyledSection = styled.section`
+	width: 100%;
+	padding: 0;
+	padding-top: ${(props) => (props.name === 'hello' ? props.theme.headerHeight : 0)};
+	margin: 0;
+	min-height: ${(props) => `calc(100vh - ${props.theme.headerHeight})`};
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	min-height: ${(props) => `calc(100vh - ${props.theme.headerHeight})`};
-	background-color: ${(props) => props.theme.colors[props.bgColor]};
-	scroll-snap-align: start;
+	background-color: ${(props) => props.theme.colors[props.name]};
 `;
 
-const CenteredContent = styled.section`
+const CenteredContent = styled.div`
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -23,8 +23,8 @@ const CenteredContent = styled.section`
 
 export function Section({ name, children }) {
 	return (
-		<ScrollSnapper bgColor={name} id={name}>
+		<StyledSection name={name} id={name}>
 			<CenteredContent>{children}</CenteredContent>
-		</ScrollSnapper>
+		</StyledSection>
 	);
 }
