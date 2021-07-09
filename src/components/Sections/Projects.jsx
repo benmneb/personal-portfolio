@@ -2,13 +2,8 @@ import styled from 'styled-components';
 import { Section } from '../../utils';
 
 const Heading = styled.h2`
-	font-size: 4rem;
 	padding-top: 24px;
 	display: inline;
-
-	${(props) => props.theme.breakpoints.max.small} {
-		font-size: 3rem;
-	}
 `;
 
 const ProjectsBox = styled.div`
@@ -17,7 +12,7 @@ const ProjectsBox = styled.div`
 	grid-gap: 30px;
 	padding: 50px;
 
-	${(props) => props.theme.breakpoints.max.medium} {
+	${(props) => props.theme.breakpoints.down.medium} {
 		grid-template-columns: 1fr;
 	}
 
@@ -39,10 +34,10 @@ const ProjectMedia = styled.img`
 	width: 100%;
 	object-fit: cover;
 	height: 300px;
-	transition: all 0.5s ease;
+	transition: ${(props) => `all ${props.theme.transitions.long} ease`};
 	filter: brightness(75%);
 
-	${(props) => props.theme.breakpoints.max.medium} {
+	${(props) => props.theme.breakpoints.down.medium} {
 		filter: brightness(100%);
 	}
 

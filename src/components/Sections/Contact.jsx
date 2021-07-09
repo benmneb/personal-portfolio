@@ -2,20 +2,12 @@ import styled from 'styled-components';
 import { Section } from '../../utils';
 import { GitHub } from '../../assets';
 
-const Heading = styled.h2`
-	font-size: 4rem;
-
-	${(props) => props.theme.breakpoints.max.small} {
-		font-size: 3rem;
-	}
-`;
-
 const Link = styled.a`
 	svg {
 		padding-top: 40px;
-		transition: transform 0.5s ease;
+		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
 
-		${(props) => props.theme.breakpoints.max.medium} {
+		${(props) => props.theme.breakpoints.down.medium} {
 			transform: scale(1);
 		}
 
@@ -28,7 +20,7 @@ const Link = styled.a`
 export function Contact() {
 	return (
 		<Section name="contact">
-			<Heading>Let's work together.</Heading>
+			<h2>Let's work together.</h2>
 			<Link
 				href="https://github.com/benmneb"
 				target="_blank"
