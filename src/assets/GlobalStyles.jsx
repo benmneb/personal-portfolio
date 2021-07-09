@@ -16,6 +16,10 @@ export const GlobalStyles = createGlobalStyle`
     p,
     div {
       font-size: 1.3rem;
+
+      ${(props) => props.theme.breakpoints.down.small} {
+        font-size: 1rem;
+      }
     }
 
     h1, h2 {
