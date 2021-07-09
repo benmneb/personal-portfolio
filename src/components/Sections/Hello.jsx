@@ -48,17 +48,15 @@ const Languages = styled.div`
 	margin-top: 20px;
 `;
 
-const HoverLanguage = styled.div`
+const HoverLanguages = styled.div`
 	width: 100%;
 	opacity: ${(props) => (props.hovering ? 1 : 0)};
 	transition: ${(props) => `opacity ${props.theme.transitions.long}`};
 `;
 
-const DefaultLanguages = styled.div`
-	width: 100%;
+const DefaultLanguages = styled(HoverLanguages)`
 	margin-left: -100%;
 	opacity: ${(props) => (props.hovering ? 0 : 1)};
-	transition: ${(props) => `opacity ${props.theme.transitions.long}`};
 `;
 
 export function Hello() {
@@ -82,7 +80,7 @@ export function Hello() {
 					onMouseLeave={() => setHovering(null)}
 				/>
 				<React
-					onMouseEnter={() => setHovering('ReactJS 17+, Create React App')}
+					onMouseEnter={() => setHovering('ReactJS 17+')}
 					onMouseLeave={() => setHovering(null)}
 				/>
 				<Redux
@@ -99,7 +97,7 @@ export function Hello() {
 				/>
 			</IconsBox>
 			<Languages>
-				<HoverLanguage hovering={Boolean(hovering)}>{hovering}</HoverLanguage>
+				<HoverLanguages hovering={Boolean(hovering)}>{hovering}</HoverLanguages>
 				<DefaultLanguages hovering={Boolean(hovering)}>
 					HTML5, CSS3, JS, ReactJS, Redux, NodeJS, MongoDB
 				</DefaultLanguages>
