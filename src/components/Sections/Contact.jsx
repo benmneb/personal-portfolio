@@ -4,7 +4,7 @@ import { GitHub } from '../../assets';
 
 const Link = styled.a`
 	svg {
-		padding-top: 40px;
+		padding-top: ${(props) => props.theme.spacing(5)};
 		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
 
 		${(props) => props.theme.breakpoints.tablet.down} {

@@ -29,10 +29,12 @@ const theme = {
 		contact: '#F1A031',
 	},
 	headerHeight: '44px',
-	spacing: '8px',
+	spacing: function (x = 1) {
+		return `${x * 8}px`;
+	},
 	transitions: {
-		short: '0.3s',
-		long: '0.5s',
+		short: '300ms',
+		long: '500ms',
 	},
 };
 

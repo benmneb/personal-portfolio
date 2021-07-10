@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import { Section } from '../../utils';
 
 const Heading = styled.h2`
-	padding-top: 24px;
+	padding-top: ${(props) => props.theme.spacing(3)};
 	display: inline;
 `;
 
 const ProjectsBox = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 30px;
-	padding: 50px;
+	grid-gap: ${(props) => props.theme.spacing(4)};
+	padding: ${(props) => props.theme.spacing(6)};
 
 	${(props) => props.theme.breakpoints.tablet.down} {
 		grid-template-columns: 1fr;
@@ -49,7 +49,7 @@ const ProjectMedia = styled.img`
 
 const ProjectTitle = styled.div`
 	background-color: ${(props) => props.theme.colors.projects};
-	line-height: 40px;
+	line-height: ${(props) => props.theme.spacing(5)};
 	align-self: flex-end;
 	width: 100%;
 	z-index: 1;

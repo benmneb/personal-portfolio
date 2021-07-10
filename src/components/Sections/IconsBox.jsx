@@ -11,7 +11,7 @@ const Box = styled.div`
 	max-width: 100vw;
 
 	svg {
-		margin: 0 8px;
+		margin: ${(props) => `0 ${props.theme.spacing()}`};
 		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
 
 		${(props) => props.theme.breakpoints.mobile.only} {

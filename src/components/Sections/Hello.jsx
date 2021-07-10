@@ -5,10 +5,10 @@ import { IconsBox } from './IconsBox';
 
 const Heading = styled.h1`
 	margin-top: 0;
-	min-height: 83.5px;
+	min-height: ${(props) => props.theme.spacing(10.5)};
 
 	${(props) => props.theme.breakpoints.mobile.only} {
-		min-height: 126px;
+		min-height: ${(props) => props.theme.spacing(15.75)};
 	}
 `;
 
