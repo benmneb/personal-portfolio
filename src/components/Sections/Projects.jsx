@@ -22,15 +22,16 @@ const ProjectCard = styled.div`
 	width: 100%;
 	padding: ${(props) => props.theme.spacing(2)};
 	flex-direction: ${(props) => (props.index % 2 ? 'row-reverse' : 'row')};
+	gap: ${(props) => props.theme.spacing(4)};
 
 	& > * {
 		width: 50%;
 		height: 300px;
-		padding-left: ${(props) => props.theme.spacing(2)};
 	}
 
 	${(props) => props.theme.breakpoints.tablet.down} {
 		flex-direction: column;
+		gap: 0;
 
 		& > * {
 			width: 100%;
