@@ -19,8 +19,6 @@ const Tab = styled.div`
 	background-color: ${(props) => props.theme.colors[props.bgColor]};
 
 	a {
-		text-decoration: none;
-		color: #fff;
 		display: block;
 	}
 `;

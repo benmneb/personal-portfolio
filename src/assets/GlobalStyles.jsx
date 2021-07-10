@@ -29,5 +29,10 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 3rem;
       }
     }
+
+    a {
+      text-decoration: none;
+      color: ${(props) => props.theme.colors.font};
+    }
   }
 `;

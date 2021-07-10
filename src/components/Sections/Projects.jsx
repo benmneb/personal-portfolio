@@ -15,11 +15,6 @@ const ProjectsBox = styled.div`
 	${(props) => props.theme.breakpoints.tablet.down} {
 		grid-template-columns: 1fr;
 	}
-
-	a {
-		text-decoration: none;
-		color: inherit;
-	}
 `;
 
 const ProjectCard = styled.div`
