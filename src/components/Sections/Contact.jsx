@@ -7,7 +7,7 @@ const Link = styled.a`
 		padding-top: 40px;
 		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
 
-		${(props) => props.theme.breakpoints.down.medium} {
+		${(props) => props.theme.breakpoints.tablet.down} {
 			transform: scale(1);
 		}
 

@@ -14,7 +14,7 @@ const Box = styled.div`
 		margin: 0 8px;
 		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
 
-		${(props) => props.theme.breakpoints.down.small} {
+		${(props) => props.theme.breakpoints.mobile.only} {
 			max-width: 80vw;
 		}
 

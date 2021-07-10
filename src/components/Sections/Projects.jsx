@@ -12,7 +12,7 @@ const ProjectsBox = styled.div`
 	grid-gap: 30px;
 	padding: 50px;
 
-	${(props) => props.theme.breakpoints.down.medium} {
+	${(props) => props.theme.breakpoints.tablet.down} {
 		grid-template-columns: 1fr;
 	}
 
@@ -37,7 +37,7 @@ const ProjectMedia = styled.img`
 	transition: ${(props) => `all ${props.theme.transitions.long} ease`};
 	filter: brightness(75%);
 
-	${(props) => props.theme.breakpoints.down.medium} {
+	${(props) => props.theme.breakpoints.tablet.down} {
 		filter: brightness(100%);
 	}
 

@@ -2,13 +2,25 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
 	breakpoints: {
-		up: {
-			small: '@media (min-width: 400px)',
-			medium: '@media (min-width: 800px)',
+		mobile: {
+			up: '@media (min-width: 0px)',
+			down: '@media (min-width: 0px)',
+			only: '@media (min-width: 0px) and (max-width: 600px)',
 		},
-		down: {
-			small: '@media (max-width: 400px)',
-			medium: '@media (max-width: 800px)',
+		tablet: {
+			up: '@media (min-width: 601px)',
+			down: '@media (max-width: 900px)',
+			only: '@media (min-width: 601px) and (max-width: 900px)',
+		},
+		desktop: {
+			up: '@media (min-width: 901px)',
+			down: '@media (max-width: 901px)',
+			only: '@media (min-width: 901px) and (max-width: 1279px)',
+		},
+		hd: {
+			up: '@media (min-width: 1280px)',
+			down: '@media (max-width: 1280px)',
+			only: '@media (min-width: 1280px)',
 		},
 	},
 	colors: {
