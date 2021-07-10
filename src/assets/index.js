@@ -9,3 +9,5 @@ export { Redux } from './icons';
 export { NodeJS } from './icons';
 export { MongoDB } from './icons';
 export { GitHub } from './icons';
+
+export { mainProjects } from './mainProjects';

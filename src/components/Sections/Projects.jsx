@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import { Section } from '../../utils';
+import { mainProjects } from '../../assets';
 
 const Heading = styled.h2`
 	padding-top: ${(props) => props.theme.spacing(3)};
@@ -55,69 +57,14 @@ export function Projects() {
 		<Section name="projects">
 			<Heading>Selected works.</Heading>
 			<ProjectsBox>
-				<a
-					href="https://codepen.io/benmneb/full/bGVMzNE"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<ProjectCard>
-						<ProjectMedia
-							id="proj-1-img"
-							src="https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png"
-							alt="img1"
-						/>
-						<ProjectTitle className="project-title">
-							Original Technical Documentation
-						</ProjectTitle>
-					</ProjectCard>
-				</a>
-
-				<a
-					href="https://codepen.io/benmneb/full/rNOdRbL"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<ProjectCard>
-						<ProjectMedia
-							id="proj-2-img"
-							src="https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png"
-							alt="img2"
-						/>
-						<ProjectTitle className="project-title">
-							Real Product Landing Page
-						</ProjectTitle>
-					</ProjectCard>
-				</a>
-
-				<a
-					href="https://codepen.io/benmneb/full/PoPRjpa"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<ProjectCard>
-						<ProjectMedia
-							id="proj-3-img"
-							src="https://i.ibb.co/9Nqx1Pn/Screen-Shot-2020-05-12-at-8-52-19-am.png"
-							alt="img3"
-						/>
-						<ProjectTitle className="project-title">Important Survey Form</ProjectTitle>
-					</ProjectCard>
-				</a>
-
-				<a
-					href="https://codepen.io/benmneb/full/qBOoraY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<ProjectCard>
-						<ProjectMedia
-							id="proj-4-img"
-							src="https://i.ibb.co/wsKcm17/Screen-Shot-2020-05-12-at-8-51-07-am.png"
-							alt="Sasha Grey Tribute"
-						/>
-						<ProjectTitle className="project-title">Emotional Tribute</ProjectTitle>
-					</ProjectCard>
-				</a>
+				{mainProjects.map((project) => (
+					<a href={project.url} target="_blank" rel="noreferrer">
+						<ProjectCard>
+							<ProjectMedia src={project.image} alt={project.title} />
+							<ProjectTitle>{project.title}</ProjectTitle>
+						</ProjectCard>
+					</a>
+				))}
 			</ProjectsBox>
 		</Section>
 	);
