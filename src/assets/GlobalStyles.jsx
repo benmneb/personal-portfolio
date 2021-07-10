@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'DM Mono', monospace;
-    color: #FFF;
+    color: ${(props) => props.theme.colors.font};
 
     p,
     div {

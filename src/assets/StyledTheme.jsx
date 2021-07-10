@@ -24,6 +24,7 @@ const theme = {
 		},
 	},
 	colors: {
+		font: '#FFFFFF',
 		hello: '#4495D4',
 		projects: '#5B9E47',
 		contact: '#F1A031',
