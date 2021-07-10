@@ -10,14 +10,17 @@ const StyledSection = styled.section`
 	justify-content: center;
 	align-items: center;
 	background-color: ${(props) => props.theme.colors[props.name]};
+	box-sizing: content-box;
 `;
 
 const CenteredContent = styled.div`
 	height: 100%;
+	width: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	margin: ${(props) => props.theme.spacing(4)};
 	text-align: center;
 `;
 

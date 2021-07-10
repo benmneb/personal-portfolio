@@ -7,8 +7,8 @@ export const mainProjects = [
 		image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
 		keyPoints: [
 			'ReactJS, NodeJS, PostgreSQL, AWS',
+			'PWA-ready, Redux, Material-UI, React Router',
 			'The worlds first complete vegan product guide to Australia',
-			'Redux, Material-UI, React Router, Axios',
 			'I did the font-end and the data entry',
 		],
 	},
@@ -19,9 +19,9 @@ export const mainProjects = [
 		github: 'https://github.com/benmneb/meditation-subjects',
 		image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
 		keyPoints: [
-			'ReactJS, Material-UI',
+			'ReactJS, Material-UI, PWA-ready',
 			'I turned the practical instructions from a 1,500 year old Buddhist book into a modern website',
-			'State managed by React Context replicating Redux use',
+			'State managed by React Context replicating Redux',
 			'Working with large data objects',
 		],
 	},
