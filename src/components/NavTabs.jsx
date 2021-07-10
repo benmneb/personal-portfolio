@@ -5,7 +5,7 @@ const Nav = styled.nav`
 	display: flex;
 	padding: 0;
 	width: 100%;
-	height: ${(props) => props.theme.headerHeight};
+	height: ${(props) => props.theme.headerHeight()};
 	z-index: 2;
 `;
 
@@ -15,7 +15,7 @@ const Tab = styled.div`
 	vertical-align: middle;
 	flex-grow: 1;
 	text-align: center;
-	line-height: ${(props) => props.theme.headerHeight};
+	line-height: ${(props) => props.theme.headerHeight()};
 	background-color: ${(props) => props.theme.colors[props.bgColor]};
 
 	a {
