@@ -6,3 +6,7 @@ export { Redux } from './Redux';
 export { NodeJS } from './NodeJS';
 export { MongoDB } from './MongoDB';
 export { GitHub } from './GitHub';
+export { PostgreSQL } from './PostgreSQL';
+export { AWS } from './AWS';
+export { PWA } from './PWA';
+export { Jquery } from './Jquery';

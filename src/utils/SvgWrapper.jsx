@@ -8,12 +8,12 @@ export function SvgWrapper({ children, transform, size, viewBox, ...props }) {
 			width={size ? size : '50'}
 			height={size ? size : '50'}
 			viewBox={viewBox ? viewBox : '0 0 172 172'}
-			style={{ fill: '#000000' }}
+			style={{ fill: '#fff' }}
 		>
 			<g transform={transform ? transform : null}>
 				<g
-					fill="none"
-					fillRule="nonzero"
+					fill="#fff"
+					fillRule="evenodd"
 					stroke="none"
 					strokeWidth="1"
 					strokeLinecap="butt"
