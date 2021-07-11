@@ -20,6 +20,7 @@ const CenteredContent = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	align-items: center;
 	margin: ${(props) => props.theme.spacing(4)};
 	text-align: center;
 `;
