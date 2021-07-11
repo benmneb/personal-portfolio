@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Section, IconsBox } from '../components';
+import { Section, ProjectCardBody } from '../components';
 import { mainProjects } from '../assets';
 
 const Heading = styled.h2`
@@ -93,10 +93,6 @@ const ProjectTitle = styled.h3`
 	margin: 0;
 `;
 
-const ProjectSubTitle = styled.h4`
-	margin: ${(props) => props.theme.spacing(0)};
-`;
-
 const ProjectActions = styled.div`
 	display: flex;
 `;
@@ -128,12 +124,7 @@ export function Projects() {
 						<ProjectMedia image={project.image} />
 						<ProjectInfo>
 							<ProjectTitle>{project.title}</ProjectTitle>
-							<ProjectSubTitle>{project.subTitle}</ProjectSubTitle>
-							<IconsBox>
-								{project.stack.map((Lang) => (
-									<Lang key={Lang.name} />
-								))}
-							</IconsBox>
+							<ProjectCardBody project={project} />
 							<ProjectActions>
 								<Button href={project.url}>View</Button>
 								<Button href={project.github}>GitHub</Button>
