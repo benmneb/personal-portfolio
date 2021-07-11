@@ -55,7 +55,7 @@ export function LanguagesBox() {
 				/>
 				<React
 					size="75"
-					onMouseEnter={() => setHovering('ReactJS 17+')}
+					onMouseEnter={() => setHovering('ReactJS 16.8+')}
 					onMouseLeave={() => setHovering(null)}
 				/>
 				<Redux
