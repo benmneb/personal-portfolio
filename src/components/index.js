@@ -1,2 +1,4 @@
 export { NavTabs } from './NavTabs';
-export { Hello, Projects, Contact } from './Sections';
+export { LanguagesBox } from './LanguagesBox';
+export { IconsBox } from './IconsBox';
+export { Section } from './Section';

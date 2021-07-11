@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-import { Section, LanguagesBox, TypeThis } from '../../utils';
+import { Section, LanguagesBox } from '../components';
+import { TypeThis } from '../utils';
 
 const Heading = styled.h1`
 	margin-top: 0;

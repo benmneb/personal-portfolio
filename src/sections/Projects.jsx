@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { Section, IconsBox } from '../../utils';
-import { mainProjects } from '../../assets';
+import { Section, IconsBox } from '../components';
+import { mainProjects } from '../assets';
 
 const Heading = styled.h2`
 	padding-top: ${(props) => props.theme.spacing(3)};

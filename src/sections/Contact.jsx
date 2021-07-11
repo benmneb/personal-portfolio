@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { Section } from '../../utils';
-import { GitHub } from '../../assets';
+
+import { Section } from '../components';
+import { GitHub } from '../assets';
 
 const Link = styled.a`
 	svg {

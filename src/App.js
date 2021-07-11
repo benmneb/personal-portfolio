@@ -1,6 +1,8 @@
 import { StyledTheme } from './assets';
 import { GlobalStyles } from './assets/GlobalStyles';
-import { NavTabs, Hello, Projects, Contact } from './components';
+
+import { NavTabs } from './components';
+import { Hello, Projects, Contact } from './sections';
 
 export function App() {
 	return (
