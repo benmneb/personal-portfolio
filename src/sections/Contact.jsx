@@ -22,12 +22,7 @@ export function Contact() {
 	return (
 		<Section name="contact">
 			<h2>Let's work together.</h2>
-			<Link
-				href="https://github.com/benmneb"
-				target="_blank"
-				rel="noreferrer"
-				id="profile-link"
-			>
+			<Link href="https://github.com/benmneb" target="_blank" rel="noreferrer">
 				<GitHub />
 			</Link>
 		</Section>

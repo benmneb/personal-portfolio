@@ -25,7 +25,7 @@ const Tab = styled.div`
 
 export function NavTabs() {
 	return (
-		<Nav id="navbar">
+		<Nav>
 			{['hello', 'projects', 'contact'].map((tabName) => (
 				<Tab key={tabName} bgColor={tabName}>
 					<a href={`#${tabName}`}>/{tabName}</a>
