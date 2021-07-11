@@ -98,8 +98,8 @@ const ProjectActions = styled.div`
 
 const Button = styled.a`
 	border-radius: ${(props) => props.theme.spacing(0.5)};
-	padding: ${(props) => `${props.theme.spacing()} 0`};
-	margin: ${(props) => `${props.theme.spacing(0.5)} ${props.theme.spacing(1)}`};
+	padding: ${(props) => props.theme.spacing(1, 0)};
+	margin: ${(props) => props.theme.spacing(0.5, 1)};
 	width: 50%;
 	background-color: transparent;
 	border: ${(props) => `${props.theme.spacing(0.25)} solid ${props.theme.colors.font}`};

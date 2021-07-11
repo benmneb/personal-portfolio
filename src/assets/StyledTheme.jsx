@@ -36,7 +36,10 @@ const theme = {
 			return '42px';
 		}
 	},
-	spacing: function (s = 1) {
+	spacing: function (s = 1, x, y, z) {
+		if (typeof z === 'number') return `${s * 8}px ${x * 8}px ${y * 8}px ${z * 8}px`;
+		if (typeof y === 'number') return `${s * 8}px ${x * 8}px ${y * 8}px`;
+		if (typeof x === 'number') return `${s * 8}px ${x * 8}px`;
 		return `${s * 8}px`;
 	},
 	transitions: {
