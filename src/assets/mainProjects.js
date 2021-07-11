@@ -23,7 +23,7 @@ export const mainProjects = [
 		url: 'github.com',
 		github: 'https://github.com/benmneb/meditation-subjects',
 		image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
-		subTitle: 'A 1,500 year old Buddhist book became a modern web-app.',
+		subTitle: 'A 1,500-year-old classic Buddhist manual is now a modern web-app.',
 		stack: [icons.ReactJS, icons.PWA],
 		keyPoints: [
 			'State managed by React Context replicating Redux',
@@ -36,7 +36,7 @@ export const mainProjects = [
 		url: 'github.com',
 		github: 'https://github.com/benmneb/four-noble-truths',
 		image: 'https://i.ibb.co/9Nqx1Pn/Screen-Shot-2020-05-12-at-8-52-19-am.png',
-		subTitle: 'The heart of the Buddhas teachings in his own words.',
+		subTitle: 'Deep elaboration of the heart of Buddhas teachings - in his own words.',
 		stack: [icons.ReactJS],
 		keyPoints: [
 			'State managed by React Context replicating Redux use',
