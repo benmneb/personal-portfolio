@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Section, ProjectCardBody } from '../components';
+import { Section, ProjectCardBody as CardBody } from '../components';
 import { mainProjects } from '../assets';
 
 const Heading = styled.h2`
@@ -19,7 +19,7 @@ const Container = styled.div`
 	}
 `;
 
-const ProjectCard = styled.div`
+const Card = styled.div`
 	display: flex;
 	width: 100%;
 	padding: ${(props) => props.theme.spacing(2)};
@@ -43,7 +43,7 @@ const ProjectCard = styled.div`
 	}
 `;
 
-const ProjectMedia = styled.div`
+const CardMedia = styled.div`
 	background-image: ${(props) => `url(${props.image})`};
 	background-size: cover;
 	background-position: center;
@@ -76,7 +76,7 @@ const ProjectMedia = styled.div`
 	}
 `;
 
-const ProjectInfo = styled.div`
+const CardInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -87,13 +87,13 @@ const ProjectInfo = styled.div`
 	}
 `;
 
-const ProjectTitle = styled.h3`
+const CardTitle = styled.h3`
 	line-height: ${(props) => props.theme.spacing(5)};
 	width: 100%;
 	margin: 0;
 `;
 
-const ProjectActions = styled.div`
+const CardActions = styled.div`
 	display: flex;
 `;
 
@@ -120,17 +120,17 @@ export function Projects() {
 			<Heading>Selected works.</Heading>
 			<Container>
 				{mainProjects.map((project, i) => (
-					<ProjectCard key={project.title} index={i}>
-						<ProjectMedia image={project.image} />
-						<ProjectInfo>
-							<ProjectTitle>{project.title}</ProjectTitle>
-							<ProjectCardBody project={project} />
-							<ProjectActions>
+					<Card key={project.title} index={i}>
+						<CardMedia image={project.image} />
+						<CardInfo>
+							<CardTitle>{project.title}</CardTitle>
+							<CardBody project={project} />
+							<CardActions>
 								<Button href={project.url}>View</Button>
 								<Button href={project.github}>GitHub</Button>
-							</ProjectActions>
-						</ProjectInfo>
-					</ProjectCard>
+							</CardActions>
+						</CardInfo>
+					</Card>
 				))}
 			</Container>
 		</Section>
