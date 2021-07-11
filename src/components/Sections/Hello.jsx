@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { Section, TypeThis } from '../../utils';
-import { IconsBox } from './IconsBox';
+import { Section, LanguagesBox, TypeThis } from '../../utils';
 
 const Heading = styled.h1`
 	margin-top: 0;
@@ -18,7 +17,7 @@ export function Hello() {
 			<Heading>
 				<TypeThis>Hi, I'm Benjamin.</TypeThis>
 			</Heading>
-			<IconsBox />
+			<LanguagesBox />
 		</Section>
 	);
 }

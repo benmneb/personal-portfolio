@@ -2,29 +2,11 @@ import { useState } from 'react';
 
 import styled from 'styled-components';
 
-import { HTML, CSS, Javascript, ReactJS, Redux, NodeJS, MongoDB } from '../../assets';
+import { HTML, CSS, Javascript, ReactJS, Redux, NodeJS, MongoDB } from '../assets';
 
-const Box = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 100vw;
+import { IconsBox } from './index';
 
-	svg {
-		margin: ${(props) => props.theme.spacing(0, 1)};
-		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
-
-		${(props) => props.theme.breakpoints.mobile.only} {
-			max-width: 80vw;
-		}
-
-		:hover {
-			transform: scale(1.3);
-		}
-	}
-`;
-
-const React = styled(ReactJS)`
+const React = styled((props) => <ReactJS {...props} />)`
 	animation: spin 40s linear infinite;
 
 	@keyframes spin {
@@ -53,12 +35,12 @@ const DefaultLanguages = styled(HoverLanguages)`
 	opacity: ${(props) => (props.hovering ? 0 : 1)};
 `;
 
-export function IconsBox() {
+export function LanguagesBox() {
 	const [hovering, setHovering] = useState(null);
 	return (
 		<>
 			<p>I speak</p>
-			<Box>
+			<IconsBox>
 				<HTML
 					onMouseEnter={() => setHovering('HTML5')}
 					onMouseLeave={() => setHovering(null)}
@@ -72,6 +54,7 @@ export function IconsBox() {
 					onMouseLeave={() => setHovering(null)}
 				/>
 				<React
+					size="75"
 					onMouseEnter={() => setHovering('ReactJS 17+')}
 					onMouseLeave={() => setHovering(null)}
 				/>
@@ -87,7 +70,7 @@ export function IconsBox() {
 					onMouseEnter={() => setHovering('MongoDB, Mongoose')}
 					onMouseLeave={() => setHovering(null)}
 				/>
-			</Box>
+			</IconsBox>
 			<Languages>
 				<HoverLanguages hovering={Boolean(hovering)}>{hovering}</HoverLanguages>
 				<DefaultLanguages hovering={Boolean(hovering)}>
