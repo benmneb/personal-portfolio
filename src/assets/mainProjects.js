@@ -1,15 +1,20 @@
+import * as icons from './icons';
+
 export const mainProjects = [
 	{
 		id: 1,
-		title: 'Vegan Product Guide',
+		title: 'Vomad Guide',
 		url: 'https://vomad.guide',
 		github: 'https://github.com/benmneb',
 		image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
-		keyPoints: [
-			'ReactJS, NodeJS, PostgreSQL, AWS',
-			'PWA-ready, Redux, Material-UI, React Router',
-			'The worlds first complete vegan product guide to Australia',
-			'I did the font-end and the data entry',
+		subTitle: 'The worlds first complete vegan product guide to Australia.',
+		stack: [
+			icons.ReactJS,
+			icons.Redux,
+			icons.NodeJS,
+			icons.PostgreSQL,
+			icons.AWS,
+			icons.PWA,
 		],
 	},
 	{
@@ -18,9 +23,9 @@ export const mainProjects = [
 		url: 'github.com',
 		github: 'https://github.com/benmneb/meditation-subjects',
 		image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
+		subTitle: 'A 1,500 year old Buddhist book became a modern web-app.',
+		stack: [icons.ReactJS, icons.PWA],
 		keyPoints: [
-			'ReactJS, Material-UI, PWA-ready',
-			'I turned the practical instructions from a 1,500 year old Buddhist book into a modern website',
 			'State managed by React Context replicating Redux',
 			'Working with large data objects',
 		],
@@ -31,9 +36,9 @@ export const mainProjects = [
 		url: 'github.com',
 		github: 'https://github.com/benmneb/four-noble-truths',
 		image: 'https://i.ibb.co/9Nqx1Pn/Screen-Shot-2020-05-12-at-8-52-19-am.png',
+		subTitle: 'The heart of the Buddhas teachings in his own words.',
+		stack: [icons.ReactJS],
 		keyPoints: [
-			'ReactJS, Material-UI',
-			'The heart of the Buddhas teachings in his own words',
 			'State managed by React Context replicating Redux use',
 			'Working with large data objects',
 		],
@@ -44,10 +49,7 @@ export const mainProjects = [
 		url: 'github.com',
 		github: 'https://github.com/benmneb/simon',
 		image: 'https://i.ibb.co/wsKcm17/Screen-Shot-2020-05-12-at-8-51-07-am.png',
-		keyPoints: [
-			'HTML5, CSS3, jQuery',
-			'Simple Simon game with audio and dark mode',
-			'Fully usable with only the keyboard',
-		],
+		subTitle: 'Simon game with audio, settings and keyboard navigation.',
+		stack: [icons.HTML, icons.CSS, icons.Jquery],
 	},
 ];

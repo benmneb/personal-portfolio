@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Section } from '../../utils';
+import { Section, IconsBox } from '../../utils';
 import { mainProjects } from '../../assets';
 
 const Heading = styled.h2`
@@ -42,7 +42,6 @@ const ProjectCard = styled.div`
 `;
 
 const ProjectMedia = styled.div`
-	max-width: 100%;
 	background-image: ${(props) => `url(${props.image})`};
 	background-size: cover;
 	background-position: center;
@@ -79,17 +78,21 @@ const ProjectInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	text-align: left;
+	text-align: center;
+
+	${(props) => props.theme.breakpoints.tablet.down} {
+		justify-content: space-evenly;
+	}
 `;
 
 const ProjectTitle = styled.h3`
 	line-height: ${(props) => props.theme.spacing(5)};
-	align-self: flex-start;
+	width: 100%;
 	margin: 0;
 `;
 
-const List = styled.ul`
-	margin-left: ${(props) => props.theme.spacing(-2)};
+const ProjectSubTitle = styled.h4`
+	margin: ${(props) => props.theme.spacing(0)};
 `;
 
 const ProjectActions = styled.div`
@@ -123,11 +126,12 @@ export function Projects() {
 						<ProjectMedia image={project.image} />
 						<ProjectInfo>
 							<ProjectTitle>{project.title}</ProjectTitle>
-							<List>
-								{project.keyPoints.map((text) => (
-									<li key={text}>{text}</li>
+							<ProjectSubTitle>{project.subTitle}</ProjectSubTitle>
+							<IconsBox>
+								{project.stack.map((Lang) => (
+									<Lang key={Lang.name} />
 								))}
-							</List>
+							</IconsBox>
 							<ProjectActions>
 								<Button href={project.url}>View</Button>
 								<Button href={project.github}>GitHub</Button>
