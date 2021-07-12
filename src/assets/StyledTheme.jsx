@@ -29,11 +29,11 @@ const theme = {
 		projects: '#5B9E47',
 		contact: '#F1A031',
 	},
-	headerHeight: function (v = window.matchMedia('(max-width: 600px)')) {
+	headerHeight: function (x = 1, v = window.matchMedia('(max-width: 600px)')) {
 		if (v.matches) {
-			return '36px';
+			return `${x * 36}px`;
 		} else {
-			return '42px';
+			return `${x * 42}px`;
 		}
 	},
 	spacing: function (s = 1, x, y, z) {
