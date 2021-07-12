@@ -42,6 +42,9 @@ const theme = {
 		projects: '#5B9E47',
 		contact: '#F1A031',
 	},
+	/**
+	 * @param {number} x
+	 */
 	headerHeight: function (x = 1, v = window.matchMedia('(max-width: 600px)')) {
 		if (v.matches) {
 			return `${x * 36}px`;
@@ -49,6 +52,12 @@ const theme = {
 			return `${x * 42}px`;
 		}
 	},
+	/**
+	 * @param {number} s
+	 * @param {number} x
+	 * @param {number} y
+	 * @param {number} z
+	 */
 	spacing: function (s = 1, x, y, z) {
 		if (typeof z === 'number') return `${s * 8}px ${x * 8}px ${y * 8}px ${z * 8}px`;
 		if (typeof y === 'number') return `${s * 8}px ${x * 8}px ${y * 8}px`;
