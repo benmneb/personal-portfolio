@@ -3,39 +3,37 @@ import { ThemeProvider } from 'styled-components';
 const theme = {
 	breakpoints: {
 		mobile: {
-			only: '@media (min-width: 0px) and (max-width: 600px)',
-			up: '@media (min-width: 0px)',
-			down: '@media (max-width: 600px)',
-			values: {
-				min: '0px',
-				max: '600px',
-			},
+			min: '0px',
+			max: '600px',
 		},
 		tablet: {
-			only: '@media (min-width: 601px) and (max-width: 900px)',
-			up: '@media (min-width: 601px)',
-			down: '@media (max-width: 900px)',
-			values: {
-				min: '601px',
-				max: '900px',
-			},
+			min: '601px',
+			max: '900px',
 		},
 		desktop: {
-			only: '@media (min-width: 901px) and (max-width: 1279px)',
-			up: '@media (min-width: 901px)',
-			down: '@media (max-width: 1279px)',
-			values: {
-				min: '901px',
-				max: '1279px',
-			},
+			min: '901px',
+			max: '1279px',
 		},
 		hd: {
-			only: '@media (min-width: 1280px)',
-			up: '@media (min-width: 1280px)',
-			down: '@media (max-width: 1280px)',
-			values: {
-				min: '1280px',
-			},
+			min: '1280px',
+		},
+		/**
+		 * @param {string} x
+		 */
+		only: function (x) {
+			return `@media (min-width: ${this[x].min}) and (max-width: ${this[x].max})`;
+		},
+		/**
+		 * @param {string} x
+		 */
+		up: function (x) {
+			return `@media (min-width: ${this[x].min})`;
+		},
+		/**
+		 * @param {string} x
+		 */
+		down: function (x) {
+			return `@media (max-width: ${this[x].max})`;
 		},
 	},
 	colors: {

@@ -10,7 +10,7 @@ const Heading = styled.h2`
 
 const Container = styled.div`
 	width: 100%;
-	max-width: ${(props) => props.theme.breakpoints.hd.values.min};
+	max-width: ${(props) => props.theme.breakpoints.hd.min};
 	display: flex;
 	flex-direction: column;
 
@@ -31,7 +31,7 @@ const Card = styled.div`
 		height: 300px;
 	}
 
-	${(props) => props.theme.breakpoints.tablet.down} {
+	${(props) => props.theme.breakpoints.down('tablet')} {
 		flex-direction: column;
 		gap: 0;
 
@@ -71,7 +71,7 @@ const CardMedia = styled.div`
 		transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
 	}
 
-	${(props) => props.theme.breakpoints.tablet.down} {
+	${(props) => props.theme.breakpoints.down('tablet')} {
 		filter: brightness(100%);
 	}
 `;
@@ -82,7 +82,7 @@ const CardInfo = styled.div`
 	justify-content: space-between;
 	text-align: center;
 
-	${(props) => props.theme.breakpoints.tablet.down} {
+	${(props) => props.theme.breakpoints.down('tablet')} {
 		justify-content: space-evenly;
 	}
 `;

@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     div {
       font-size: 1.3rem;
 
-      ${(props) => props.theme.breakpoints.mobile.only} {
+      ${(props) => props.theme.breakpoints.only('mobile')} {
         font-size: 1rem;
       }
     }
@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     h1, h2 {
       font-size: 4rem;
 
-      ${(props) => props.theme.breakpoints.mobile.only} {
+      ${(props) => props.theme.breakpoints.only('mobile')} {
         font-size: 3rem;
       }
     }

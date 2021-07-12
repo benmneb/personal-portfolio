@@ -7,7 +7,7 @@ const Heading = styled.h1`
 	margin-top: 0;
 	min-height: ${(props) => props.theme.spacing(10.5)};
 
-	${(props) => props.theme.breakpoints.mobile.only} {
+	${(props) => props.theme.breakpoints.only('mobile')} {
 		min-height: ${(props) => props.theme.spacing(15.75)};
 	}
 `;
