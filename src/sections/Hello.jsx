@@ -16,7 +16,7 @@ export function Hello() {
 	return (
 		<Section name="hello">
 			<Heading>
-				<TypeThis>Hi, I'm Benjamin.</TypeThis>
+				<TypeThis strings={[`Hi, I'm a React dev.`, `Hi, I'm Benjamin.`]} />
 			</Heading>
 			<LanguagesBox />
 		</Section>
