@@ -15,7 +15,7 @@ const Container = styled.div`
 	flex-direction: column;
 
 	> * {
-		margin: 32px 0;
+		margin: ${(props) => props.theme.spacing(8, 0)};
 	}
 `;
 
