@@ -5,15 +5,15 @@ import { NavTabs } from './components';
 import { Hello, Projects, Contact } from './sections';
 
 export function App() {
-	return (
-		<StyledTheme>
-			<GlobalStyles />
-			<NavTabs />
-			<main>
-				<Hello />
-				<Projects />
-				<Contact />
-			</main>
-		</StyledTheme>
-	);
+  return (
+    <StyledTheme>
+      <GlobalStyles />
+      <NavTabs />
+      <main>
+        <Hello />
+        <Projects />
+        <Contact />
+      </main>
+    </StyledTheme>
+  );
 }
