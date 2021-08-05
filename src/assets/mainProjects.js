@@ -40,7 +40,7 @@ export const mainProjects = [
   {
     id: 3,
     title: 'Four Noble Truths',
-    url: 'github.com',
+    url: 'https://four-noble-truths.vercel.app/',
     github: 'https://github.com/benmneb/four-noble-truths',
     image: 'https://i.ibb.co/9Nqx1Pn/Screen-Shot-2020-05-12-at-8-52-19-am.png',
     subTitle:
@@ -48,8 +48,17 @@ export const mainProjects = [
     stack: [
       {
         icon: icons.ReactJS,
-        description: 'ReactJS, useContext replicating Redux',
+        description: 'ReactJS, Material-UI',
       },
+      {
+        icon: icons.Redux,
+        description: 'Redux / React-Redux',
+      },
+      { icon: icons.ExpressJS, description: 'NodeJS / ExpressJS server' },
+      { icon: icons.MongoDB, description: 'MongoDB Atlas' },
+      { icon: icons.Vercel, description: 'Front-end hosted on Vercel' },
+      { icon: icons.Heroku, description: 'Back-end hosted on Heroku' },
+      { icon: icons.PWA, description: 'Installable as a PWA' },
     ],
     keyPoints: ['Working with large data objects'],
   },
