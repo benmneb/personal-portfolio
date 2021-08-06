@@ -18,7 +18,6 @@ const HoverTextBox = styled.div`
 `;
 
 const DefaultTextBox = styled(HoverTextBox)`
-  margin: ${(props) => props.theme.spacing(0)};
   margin-left: -100%;
   opacity: ${(props) => (props.hovering ? 0 : 1)};
 `;
