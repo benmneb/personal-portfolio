@@ -12,7 +12,7 @@ const StyledButton = styled.a`
   border: ${(props) =>
     `${props.theme.spacing(0.25)} solid ${props.theme.colors.font}`};
   transition: ${(props) =>
-    `background-color ${props.theme.transitions.short} ease-in-out, color ${props.theme.transitions.short} ease-in-out`};
+    `background-color ${props.theme.transitions.shorter} ease-in-out, color ${props.theme.transitions.short} ease-in-out`};
 
   ${(props) =>
     props.primary
