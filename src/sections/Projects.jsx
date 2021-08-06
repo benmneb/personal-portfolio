@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
+import { MdLaunch } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
+
 import { Section, ProjectCardBody as CardBody } from '../components';
+import { Button } from '../utils';
 import { mainProjects } from '../assets';
 
 const Heading = styled.h2`
@@ -97,24 +101,6 @@ const CardActions = styled.div`
   display: flex;
 `;
 
-const Button = styled.a`
-  border-radius: ${(props) => props.theme.spacing(0.5)};
-  padding: ${(props) => props.theme.spacing(1, 0)};
-  margin: ${(props) => props.theme.spacing(0.5, 1)};
-  width: 50%;
-  background-color: transparent;
-  border: ${(props) =>
-    `${props.theme.spacing(0.25)} solid ${props.theme.colors.font}`};
-  text-align: center;
-  transition: ${(props) =>
-    `background-color ${props.theme.transitions.short} ease-in-out, color ${props.theme.transitions.short} ease-in-out`};
-
-  :hover {
-    background-color: ${(props) => props.theme.colors.font};
-    color: ${(props) => props.theme.colors.projects};
-  }
-`;
-
 export function Projects() {
   return (
     <Section name="projects">
@@ -127,8 +113,12 @@ export function Projects() {
               <CardTitle>{project.title}</CardTitle>
               <CardBody project={project} />
               <CardActions>
-                <Button href={project.url}>View</Button>
-                <Button href={project.github}>GitHub</Button>
+                <Button primary href={project.url}>
+                  <MdLaunch /> Launch
+                </Button>
+                <Button href={project.github}>
+                  <FaGithub /> Source
+                </Button>
               </CardActions>
             </CardInfo>
           </Card>
