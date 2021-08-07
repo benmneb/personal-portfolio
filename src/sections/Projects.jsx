@@ -106,18 +106,18 @@ export function Projects() {
     <Section name="projects">
       <Heading>Selected works.</Heading>
       <Container>
-        {mainProjects.map((project, i) => (
-          <Card key={project.title} index={i}>
+        {mainProjects.map((project) => (
+          <Card key={project.title} index={project.id}>
             <CardMedia image={project.image} />
             <CardInfo>
               <CardTitle>{project.title}</CardTitle>
               <CardBody project={project} />
               <CardActions>
-                <Button primary href={project.url}>
-                  <MdLaunch /> Launch
+                <Button primary href={project.url} icon={<MdLaunch />}>
+                  Launch
                 </Button>
-                <Button href={project.github}>
-                  <FaGithub /> Source
+                <Button href={project.github} icon={<FaGithub />}>
+                  Source
                 </Button>
               </CardActions>
             </CardInfo>
