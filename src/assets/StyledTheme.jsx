@@ -66,7 +66,7 @@ const theme = {
     return `${s * 8}px`;
   },
   transitions: {
-    shorter: '150ms',
+    shorter: '200ms',
     short: '300ms',
     long: '500ms',
   },
