@@ -113,7 +113,12 @@ export function Projects() {
               <CardTitle>{project.title}</CardTitle>
               <CardBody project={project} />
               <CardActions>
-                <Button primary href={project.url} icon={<MdLaunch />}>
+                <Button
+                  primary
+                  variant="projects"
+                  href={project.url}
+                  icon={<MdLaunch />}
+                >
                   Launch
                 </Button>
                 <Button href={project.github} icon={<FaGithub />}>
