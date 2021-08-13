@@ -13,3 +13,4 @@ export { Vercel } from './Vercel';
 export { Heroku } from './Heroku';
 export { PWA } from './PWA';
 export { Jquery } from './Jquery';
+export { Surge } from './Surge';
