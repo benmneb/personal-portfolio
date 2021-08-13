@@ -66,33 +66,27 @@ export function Contact() {
 
   init('user_UFoCeeeYgIN4JVlxBwB30');
 
-  function handleSubmit() {
+  async function handleSubmit() {
     setPending(true);
-    emailjs
-      .send('service_fg3ablh', 'contact', {
+    try {
+      const response = await emailjs.send('service_fg3ablh', 'contact', {
         message: proposal,
         return_address: email,
-      })
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          setPendingMessage('Success');
-          setProposal('');
-          setEmail('');
-          setTimeout(() => {
-            setPendingMessage(null);
-            setPending(false);
-          }, 2000);
-        },
-        (err) => {
-          console.log('FAILED...', err);
-          setPending(false);
-        }
-      )
-      .catch((error) => {
-        console.log(error.message);
-        setPending(false);
+        from_name: 'Larry',
       });
+      console.log('SUCCESS!', response.status, response.text);
+      setPendingMessage('Success');
+      setProposal('');
+      setEmail('');
+    } catch (error) {
+      console.log('Error sending email:', error.message);
+      setPendingMessage('Failed');
+    } finally {
+      setTimeout(() => {
+        setPendingMessage(null);
+        setPending(false);
+      }, 2000);
+    }
   }
 
   return (
