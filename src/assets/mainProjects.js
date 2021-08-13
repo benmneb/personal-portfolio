@@ -65,14 +65,19 @@ export const mainProjects = [
   {
     id: 4,
     title: 'Simon',
-    url: 'github.com',
+    url: 'https://simple-simon.surge.sh',
     github: 'https://github.com/benmneb/simon',
     image: 'https://i.ibb.co/wsKcm17/Screen-Shot-2020-05-12-at-8-51-07-am.png',
-    subTitle: 'Simon game with audio, settings and keyboard navigation.',
+    subTitle:
+      'Simon game with audio, settings, keyboard navigation and global high scores.',
     stack: [
       { icon: icons.HTML, description: 'HTML5' },
       { icon: icons.CSS, description: 'CSS3' },
       { icon: icons.Jquery, description: 'jQuery' },
+      { icon: icons.ExpressJS, description: 'NodeJS / ExpressJS server' },
+      { icon: icons.MongoDB, description: 'MongoDB (NodeJS Driver) on Atlas' },
+      { icon: icons.Surge, description: 'Front-end hosted on Surge' },
+      { icon: icons.Heroku, description: 'Server hosted on Heroku' },
     ],
   },
 ];
