@@ -37,8 +37,9 @@ export default function Button(props) {
 
   return (
     <StyledButton {...other}>
-      {icon && icon}
+      {!other.primary && icon && icon}
       {children}
+      {other.primary && icon && icon}
     </StyledButton>
   );
 }
