@@ -5,7 +5,7 @@ export const mainProjects = [
     id: 1,
     title: 'Vomad Guide',
     url: 'https://vomad.guide',
-    github: 'https://github.com/benmneb',
+    github: 'https://github.com/benmneb/guide',
     image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
     subTitle: 'The worlds first complete vegan product guide to Australia.',
     stack: [
@@ -22,20 +22,20 @@ export const mainProjects = [
   },
   {
     id: 2,
-    title: 'Meditation Subjects',
-    url: 'github.com',
-    github: 'https://github.com/benmneb/meditation-subjects',
-    image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
-    subTitle:
-      'A 1,500-year-old classic Buddhist manual is now a modern web-app.',
+    title: 'Veganise It!',
+    url: 'https://veganise.it',
+    github: 'https://github.com/benmneb/veganise-it',
+    image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
+    subTitle: 'Your favourite recipes... Made with plants.',
     stack: [
       {
         icon: icons.ReactJS,
-        description: 'ReactJS, useContext replicating Redux',
+        description: 'ReactJS, React-Router, Material-UI',
       },
+      { icon: icons.NodeJS, description: 'NodeJS / ExpressJS server' },
+      { icon: icons.Vercel, description: 'Hosted on Vercel' },
       { icon: icons.PWA, description: 'Installable as a PWA' },
     ],
-    keyPoints: ['Working with large data objects'],
   },
   {
     id: 3,
@@ -64,6 +64,23 @@ export const mainProjects = [
   },
   {
     id: 4,
+    title: 'Meditation Subjects',
+    url: 'github.com',
+    github: 'https://github.com/benmneb/meditation-subjects',
+    image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
+    subTitle:
+      'A 1,500-year-old classic Buddhist manual is now a modern web-app.',
+    stack: [
+      {
+        icon: icons.ReactJS,
+        description: 'ReactJS, useContext replicating Redux',
+      },
+      { icon: icons.PWA, description: 'Installable as a PWA' },
+    ],
+    keyPoints: ['Working with large data objects'],
+  },
+  {
+    id: 5,
     title: 'Simon',
     url: 'https://simple-simon.surge.sh',
     github: 'https://github.com/benmneb/simon',
