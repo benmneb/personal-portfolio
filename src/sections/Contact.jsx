@@ -1,30 +1,26 @@
-import styled from 'styled-components';
-
 import { Section } from '../components';
 import { GitHub } from '../assets';
 
-const Link = styled.a`
-  svg {
-    padding-top: ${(props) => props.theme.spacing(5)};
-    transition: ${(props) => `transform ${props.theme.transitions.long} ease`};
+function toggleModal() {
+  const modalRoot = document.getElementById('modal-root');
+  const backdrop = document.getElementById('backdrop');
 
-    ${(props) => props.theme.breakpoints.down('tablet')} {
-      transform: scale(1);
-    }
-
-    :hover {
-      transform: scale(1.1);
-    }
+  if (Object.values(modalRoot.classList).includes('visible')) {
+    [modalRoot, backdrop].forEach((el) => el.classList.add('hidden'));
+    [modalRoot, backdrop].forEach((el) => el.classList.remove('visible'));
+    return;
   }
-`;
+
+  [modalRoot, backdrop].forEach((el) => el.classList.remove('hidden'));
+  [modalRoot, backdrop].forEach((el) => el.classList.add('visible'));
+  return;
+}
 
 export function Contact() {
   return (
     <Section name="contact">
       <h2>Let's work together.</h2>
-      <Link href="https://github.com/benmneb" target="_blank" rel="noreferrer">
-        <GitHub />
-      </Link>
+      <GitHub onClick={toggleModal} />
     </Section>
   );
 }

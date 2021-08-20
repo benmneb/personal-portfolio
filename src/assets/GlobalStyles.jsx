@@ -35,4 +35,28 @@ export const GlobalStyles = createGlobalStyle`
       color: ${(props) => props.theme.colors.font};
     }
   }
+
+  #modal {
+    transition: opacity 200ms ease-in-out, visibility 100ms ease;
+  }
+
+  #backdrop {
+    transition: opacity 100ms ease-in-out, visibility 50ms ease;
+  }
+
+  #modalCard {
+    transition: scale 150ms ease-in;
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    scale: 1.2;
+  }
 `;
