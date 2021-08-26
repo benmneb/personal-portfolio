@@ -34,5 +34,18 @@ export const GlobalStyles = createGlobalStyle`
       text-decoration: none;
       color: ${(props) => props.theme.colors.font};
     }
+
+    .index_controls__9z-dM {
+      top: 2px
+    }
+
+    .index_controls__9z-dM,
+    .index_lineText__2Poex {
+      font-size: 18px
+    }
+
+    .index_editor__2tqRz {
+      overscroll-behavior: contain;
+    }
   }
 `;

@@ -4,3 +4,5 @@ export { GlobalStyles } from './GlobalStyles';
 export * from './icons';
 
 export { mainProjects } from './mainProjects';
+
+export { themes } from './terminalThemes';
