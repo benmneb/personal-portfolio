@@ -28,7 +28,8 @@ export function TypeThis(props) {
 }
 
 TypeThis.defaultProps = {
-  speed: 50,
+  typeSpeed: 100,
+  backSpeed: 50,
   showCursor: false,
 };
 
