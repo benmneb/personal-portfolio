@@ -63,7 +63,7 @@ export function LanguagesBox() {
         />
         <React
           size="75"
-          onMouseEnter={() => setHovering('ReactJS 16.8+')}
+          onMouseEnter={() => setHovering('ReactJS')}
           onMouseLeave={() => setHovering(null)}
         />
         <Redux
@@ -75,7 +75,7 @@ export function LanguagesBox() {
           onMouseLeave={() => setHovering(null)}
         />
         <MongoDB
-          onMouseEnter={() => setHovering('MongoDB, Mongoose')}
+          onMouseEnter={() => setHovering('MongoDB, MongoDB Atlas, Mongoose')}
           onMouseLeave={() => setHovering(null)}
         />
       </IconsBox>
