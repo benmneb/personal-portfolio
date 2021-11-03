@@ -1,7 +1,7 @@
 export { StyledTheme } from './StyledTheme';
 export { GlobalStyles } from './GlobalStyles';
 
-export * from './icons';
+export * from './Icons';
 
 export { mainProjects } from './mainProjects';
 

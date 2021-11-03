@@ -1,4 +1,4 @@
-import * as icons from './icons';
+import * as icons from './Icons';
 
 export const mainProjects = [
   {
@@ -7,16 +7,16 @@ export const mainProjects = [
     url: 'https://vomad.guide',
     github: 'https://github.com/benmneb/guide',
     image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
-    subTitle: 'The worlds first complete vegan product guide to Australia.',
+    subTitle: "The world's first complete vegan product guide to Australia.",
     stack: [
       {
         icon: icons.ReactJS,
         description: 'ReactJS, React-Router, Material-UI',
       },
-      { icon: icons.Redux, description: 'State managed with Redux' },
+      { icon: icons.Redux, description: 'Redux / React-Redux' },
       { icon: icons.NodeJS, description: 'NodeJS / ExpressJS server' },
       { icon: icons.PostgreSQL, description: 'PostgreSQL with Knex.js' },
-      { icon: icons.AWS, description: 'Hosted on AWS Amplify' },
+      { icon: icons.AWS, description: 'AWS Elastic Beanstalk' },
       { icon: icons.PWA, description: 'Installable as a PWA' },
     ],
   },
@@ -26,14 +26,21 @@ export const mainProjects = [
     url: 'https://veganise.it',
     github: 'https://github.com/benmneb/veganise-it',
     image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
-    subTitle: 'Your favourite recipes... Made with plants.',
+    subTitle: "The internet's most surprisingly vegan recipes.",
     stack: [
       {
         icon: icons.ReactJS,
-        description: 'ReactJS, React-Router, Material-UI',
+        description: 'ReactJS, React-Router, MUI',
       },
+      { icon: icons.Redux, description: 'Redux / React-Redux' },
       { icon: icons.NodeJS, description: 'NodeJS / ExpressJS server' },
-      { icon: icons.Vercel, description: 'Hosted on Vercel' },
+      { icon: icons.Netlify, description: 'Front-end hosted on Netlify' },
+      { icon: icons.Heroku, description: 'Server hosted on Heroku' },
+      {
+        icon: icons.MongoDB,
+        description: 'MongoDB (Native NodeJS Driver) on Atlas',
+      },
+      { icon: icons.AWS, description: 'Images stored on AWS S3' },
       { icon: icons.PWA, description: 'Installable as a PWA' },
     ],
   },
@@ -62,23 +69,23 @@ export const mainProjects = [
     ],
     keyPoints: ['Working with large data objects'],
   },
-  {
-    id: 4,
-    title: 'Meditation Subjects',
-    url: 'github.com',
-    github: 'https://github.com/benmneb/meditation-subjects',
-    image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
-    subTitle:
-      'A 1,500-year-old classic Buddhist manual is now a modern web-app.',
-    stack: [
-      {
-        icon: icons.ReactJS,
-        description: 'ReactJS, useContext replicating Redux',
-      },
-      { icon: icons.PWA, description: 'Installable as a PWA' },
-    ],
-    keyPoints: ['Working with large data objects'],
-  },
+  // {
+  //   id: 4,
+  //   title: 'Meditation Subjects',
+  //   url: 'github.com',
+  //   github: 'https://github.com/benmneb/meditation-subjects',
+  //   image: 'https://i.ibb.co/m6sYBw2/Screen-Shot-2020-05-12-at-8-53-59-am.png',
+  //   subTitle:
+  //     'A 1,500-year-old classic Buddhist manual is now a modern web-app.',
+  //   stack: [
+  //     {
+  //       icon: icons.ReactJS,
+  //       description: 'ReactJS, useContext replicating Redux',
+  //     },
+  //     { icon: icons.PWA, description: 'Installable as a PWA' },
+  //   ],
+  //   keyPoints: ['Working with large data objects'],
+  // },
   {
     id: 5,
     title: 'Simon',
