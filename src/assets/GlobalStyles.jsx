@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Fira Code', monospace;
     color: ${(props) => props.theme.colors.font};
 
     p,
