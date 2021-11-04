@@ -87,7 +87,7 @@ export const mainProjects = [
   //   keyPoints: ['Working with large data objects'],
   // },
   {
-    id: 5,
+    id: 4,
     title: 'Simon',
     url: 'https://simple-simon.surge.sh',
     github: 'https://github.com/benmneb/simon',
