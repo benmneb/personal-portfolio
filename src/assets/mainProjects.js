@@ -88,7 +88,27 @@ export const mainProjects = [
   // },
   {
     id: 4,
-    title: 'Simon',
+    title: 'mui-image',
+    url: 'https://mui-image.surge.sh',
+    github: 'https://github.com/benmneb/mui-image',
+    image: 'https://i.ibb.co/wsKcm17/Screen-Shot-2020-05-12-at-8-51-07-am.png',
+    subTitle:
+      'The only MUI React component to satisfy the Material guidelines for loading images.',
+    stack: [
+      {
+        icon: icons.ReactJS,
+        description: 'ReactJS, NWB, MUI',
+      },
+      {
+        icon: icons.NPM,
+        description: 'Published on the NPM registry',
+      },
+      { icon: icons.Surge, description: 'Demo hosted on Surge' },
+    ],
+  },
+  {
+    id: 5,
+    title: 'Simple Simon',
     url: 'https://simple-simon.surge.sh',
     github: 'https://github.com/benmneb/simon',
     image: 'https://i.ibb.co/wsKcm17/Screen-Shot-2020-05-12-at-8-51-07-am.png',
