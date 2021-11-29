@@ -52,6 +52,7 @@ const CardMedia = styled.div`
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  border-radius: ${(props) => props.theme.spacing()};
   filter: brightness(75%);
   transition: ${(props) => `filter ${props.theme.transitions.long} ease`};
 
