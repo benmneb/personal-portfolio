@@ -6,7 +6,7 @@ export const mainProjects = [
     title: 'Vomad Guide',
     url: 'https://vomad.guide',
     github: 'https://github.com/benmneb/guide',
-    image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
+    image: 'https://i.postimg.cc/pX1bsqt1/vomadguide.gif',
     subTitle: "The world's first complete vegan product guide to Australia.",
     stack: [
       {
@@ -22,10 +22,30 @@ export const mainProjects = [
   },
   {
     id: 2,
+    title: 'mui-image',
+    url: 'https://mui-image.surge.sh',
+    github: 'https://github.com/benmneb/mui-image',
+    image: 'https://i.postimg.cc/wvddhMdq/mui-image.gif',
+    subTitle:
+      'The only MUI React component to satisfy the Material guidelines for loading images.',
+    stack: [
+      {
+        icon: icons.ReactJS,
+        description: 'ReactJS, NWB, MUI',
+      },
+      {
+        icon: icons.NPM,
+        description: 'Published on the NPM registry',
+      },
+      { icon: icons.Surge, description: 'Demo hosted on Surge' },
+    ],
+  },
+  {
+    id: 3,
     title: 'Veganise It!',
     url: 'https://veganise.it',
     github: 'https://github.com/benmneb/veganise-it',
-    image: 'https://i.ibb.co/6gBsR7d/Screen-Shot-2020-05-12-at-8-55-25-am.png',
+    image: 'https://i.postimg.cc/c4JG7PPn/veganiseit.gif',
     subTitle: "The internet's most surprisingly vegan recipes.",
     stack: [
       {
@@ -45,11 +65,11 @@ export const mainProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Four Noble Truths',
     url: 'https://four-noble-truths.vercel.app/',
     github: 'https://github.com/benmneb/four-noble-truths',
-    image: 'https://i.ibb.co/9Nqx1Pn/Screen-Shot-2020-05-12-at-8-52-19-am.png',
+    image: 'https://i.postimg.cc/PJTTkx63/4NT.gif',
     subTitle:
       'Deep elaboration of the heart of Buddhas teachings - in his own words.',
     stack: [
@@ -70,7 +90,7 @@ export const mainProjects = [
     keyPoints: ['Working with large data objects'],
   },
   // {
-  //   id: 4,
+  //   id: 5,
   //   title: 'Meditation Subjects',
   //   url: 'github.com',
   //   github: 'https://github.com/benmneb/meditation-subjects',
@@ -86,28 +106,8 @@ export const mainProjects = [
   //   ],
   //   keyPoints: ['Working with large data objects'],
   // },
-  {
-    id: 4,
-    title: 'mui-image',
-    url: 'https://mui-image.surge.sh',
-    github: 'https://github.com/benmneb/mui-image',
-    image: 'https://i.ibb.co/wsKcm17/Screen-Shot-2020-05-12-at-8-51-07-am.png',
-    subTitle:
-      'The only MUI React component to satisfy the Material guidelines for loading images.',
-    stack: [
-      {
-        icon: icons.ReactJS,
-        description: 'ReactJS, NWB, MUI',
-      },
-      {
-        icon: icons.NPM,
-        description: 'Published on the NPM registry',
-      },
-      { icon: icons.Surge, description: 'Demo hosted on Surge' },
-    ],
-  },
   // {
-  //   id: 5,
+  //   id: 6,
   //   title: 'Simple Simon',
   //   url: 'https://simple-simon.surge.sh',
   //   github: 'https://github.com/benmneb/simon',
