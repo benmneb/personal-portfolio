@@ -63,7 +63,7 @@ export function LanguagesBox() {
         />
         <React
           size="75"
-          onMouseEnter={() => setHovering('ReactJS')}
+          onMouseEnter={() => setHovering('ReactJS, NextJS')}
           onMouseLeave={() => setHovering(null)}
         />
         <Redux
